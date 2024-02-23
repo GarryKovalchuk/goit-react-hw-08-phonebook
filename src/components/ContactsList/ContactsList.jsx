@@ -1,4 +1,4 @@
-import './ContactList.module.css';
+import s from '../Styles.module.css';
 import { Loader } from '../../components/Loader/Loader';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
@@ -28,17 +28,18 @@ export const ContactsList = () => {
   const filteredContacts = findContacts();
 
   return (
-    <>
+    <div>
       {isLoaging && <Loader />}
       {isLoggedIn && (
-        <ul>
+        <ul className={s.items__container}>
           {contacts &&
             filteredContacts.map(({ id, name, number }) => {
               return (
-                <li key={id}>
-                  <h3>{name}:</h3>
-                  <p>{number}</p>
+                <li className={s.item} key={id}>
+                  <h3 className={s.item__name}>{name}:</h3>
+                  <p className={s.item__name}>{number}</p>
                   <button
+                    className={s.user__btn}
                     type="button"
                     onClick={() => {
                       deleteContact(id);
@@ -53,6 +54,6 @@ export const ContactsList = () => {
             })}
         </ul>
       )}
-    </>
+    </div>
   );
 };
