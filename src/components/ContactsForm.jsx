@@ -3,7 +3,7 @@ import s from '../Styles.module.css';
 import { useContacts } from './Hooks/hooks';
 import { infoToast, successToast } from './Toasts';
 
-export const ContactForm = () => {
+export const ContactsForm = () => {
   const { contacts, addContact } = useContacts();
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
