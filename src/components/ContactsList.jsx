@@ -1,12 +1,12 @@
 import s from '../Styles.module.css';
-import { Loader } from '../../components/Loader/Loader';
+import { Loader } from './Loader/Loader';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { useContacts } from './Hooks/hooks';
-import { contactsOperations } from '../../redux/Contacts/contactsOps';
-import { deleteToast } from '../Toasts';
+import { contactsOperations } from '../redux/Contacts/contactsOps';
+import { deleteToast } from './Toasts';
 import { useSelector } from 'react-redux';
-import authSelectors from '../../redux/Author/author-selectors';
+import authSelectors from '../redux/Author/author-selectors';
 
 export const ContactsList = () => {
   const isLoggedIn = useSelector(authSelectors.getIsLoggedIn);

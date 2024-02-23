@@ -6,8 +6,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import authOperations from '../redux/Author/author-operations';
 import authSelectors from '../redux/Author/author-selectors';
 
-import PrivateRoute from './Routs/PrivateRoute';
-import PublicRoute from './Routs/PublicRoute';
+import PrivateRoute from './Routes/PrivateRoute';
+import PublicRoute from './Routes/PublicRoute';
 
 import { Layout } from './Layout';
 
