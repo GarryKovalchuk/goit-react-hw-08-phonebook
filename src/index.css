@@ -10,9 +10,9 @@
 
   --navlink__hover: #ececf1;
 
-  --btn__red: rgba(255, 0, 0, 0.2);
+  --btn__red: #cfdbf7;
   --btn__green: #cfdbf7;
-  --btn__shadow: 0 0 2px #333;
+  --btn__shadow: 0 0 2px #4260aa;
 }
 
 *,
