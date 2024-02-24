@@ -1,5 +1,5 @@
 import { toast } from 'react-toastify';
-// 🦄 Wow so easy!
+
 export const successToast = text => {
   toast.success(text, {
     position: 'top-right',
